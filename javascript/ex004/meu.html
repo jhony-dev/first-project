@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nascionalidade</title>
+    <script>
+        function Resuldado (){
+            var paisv = document.getElementById('país')
+            var res = document.getElementById('res')
+
+            var nas = String(paisv.value)
+            res.innerText = `Seu país é ${nas}`
+           if (nas == 'Brasil'){
+              res.innerHTML = 'Você é Brasileiro'
+           } else (
+               res.innerHTML = 'Você é Estrangeiro'
+           ) 
+         }
+              
+    </script>
+</head>
+<body>
+    <h1>Sua nascionalidade</h1>
+    Qual seu país? <input type="text" name="país" id="país">
+    <input type="button" value="Verificar" onclick="Resuldado()">
+    <div id="res">
+    </div>
+    
+</body>
+</html>
+    
